@@ -1,0 +1,148 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Product;
+use Illuminate\Database\Seeder;
+
+class ProductSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        Product::insert([
+            [
+                'name' => 'كريم ترطيب الوجه',
+                'description' => 'كريم غني بالفيتامينات يمنح بشرتك ترطيبًا عميقًا طوال اليوم.',
+                'category_id' => 1,
+                'count' => 50,
+                'minimum_quantity' => 5,
+                'unit' => 'علبة',
+                'buying_price' => 50,
+                'selling_price' => 75,
+                'weight' => 100,
+                'status' => 'active',
+                'image' => 'https://images.unsplash.com/photo-1589987607627-81673dff1ad0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+            ],
+            [
+                'name' => 'ماسكارا مقاومة للماء',
+                'description' => 'تمنح رموشك كثافة وطول يدومان طويلاً بدون تكتل.',
+                'category_id' => 2,
+                'count' => 30,
+                'minimum_quantity' => 3,
+                'unit' => 'قطعة',
+                'buying_price' => 40,
+                'selling_price' => 65,
+                'weight' => null,
+                'status' => 'active',
+                'image' => 'https://images.unsplash.com/photo-1607082352319-b2741ca05b82?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+            ],
+            [
+                'name' => 'أحمر شفاه مطفي',
+                'description' => 'لون ثابت يدوم 8 ساعات بتركيبة مرطبة.',
+                'category_id' => 2,
+                'count' => 70,
+                'minimum_quantity' => 10,
+                'unit' => 'قطعة',
+                'buying_price' => 30,
+                'selling_price' => 50,
+                'weight' => null,
+                'status' => 'active',
+                'image' => 'https://images.unsplash.com/photo-1612431140813-1a89cbe09847?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+            ],
+            [
+                'name' => 'شامبو للشعر الجاف',
+                'description' => 'تركيبة غنية بزيت الأرغان لترطيب الشعر ومنع التقصف.',
+                'category_id' => 3,
+                'count' => 60,
+                'minimum_quantity' => 8,
+                'unit' => 'عبوة',
+                'buying_price' => 45,
+                'selling_price' => 70,
+                'weight' => 100,
+                'status' => 'active',
+                'image' => 'https://images.unsplash.com/photo-1598032898752-8c3cfd6f1d2e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+            ],
+            [
+                'name' => 'كريم أساس بتركيبة خفيفة',
+                'description' => 'تغطية طبيعية مع حماية من الشمس SPF 15.',
+                'category_id' => 2,
+                'count' => 40,
+                'minimum_quantity' => 5,
+                'unit' => 'علبة',
+                'buying_price' => 60,
+                'selling_price' => 90,
+                'weight' => 30,
+                'status' => 'active',
+                'image' => 'https://images.unsplash.com/photo-1622459466156-9e1d89a92e69?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+            ],
+            [
+                'name' => 'سيروم فيتامين C',
+                'description' => 'سيروم مضاد للأكسدة لتوحيد لون البشرة وتقليل التصبغات.',
+                'category_id' => 1,
+                'count' => 35,
+                'minimum_quantity' => 5,
+                'unit' => 'زجاجة',
+                'buying_price' => 80,
+                'selling_price' => 120,
+                'weight' => 50,
+                'status' => 'active',
+                'image' => 'https://images.unsplash.com/photo-1607083206173-9fa268fa5a5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+            ],
+            [
+                'name' => 'تونر للبشرة الحساسة',
+                'description' => 'ينظف ويرطب البشرة دون تهيج.',
+                'category_id' => 1,
+                'count' => 45,
+                'minimum_quantity' => 6,
+                'unit' => 'زجاجة',
+                'buying_price' => 35,
+                'selling_price' => 55,
+                'weight' => 150,
+                'status' => 'active',
+                'image' => 'https://images.unsplash.com/photo-1607083206173-5a0ccf6b1a3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+            ],
+            [
+                'name' => 'بلسم مغذي للشعر',
+                'description' => 'يغذي الشعر بعمق ويتركه ناعمًا ولامعًا.',
+                'category_id' => 3,
+                'count' => 55,
+                'minimum_quantity' => 7,
+                'unit' => 'عبوة',
+                'buying_price' => 50,
+                'selling_price' => 80,
+                'weight' => 200,
+                'status' => 'active',
+                'image' => 'https://images.unsplash.com/photo-1598032898752-8124c0f0cbbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+            ],
+            [
+                'name' => 'مرطب شفاه طبيعي',
+                'description' => 'يرطب الشفاه ويحميها من التشقق.',
+                'category_id' => 4,
+                'count' => 90,
+                'minimum_quantity' => 15,
+                'unit' => 'قطعة',
+                'buying_price' => 20,
+                'selling_price' => 35,
+                'weight' => null,
+                'status' => 'active',
+                'image' => 'https://images.unsplash.com/photo-1607083206173-c60f72f6d8a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+            ],
+            [
+                'name' => 'بخاخ تثبيت المكياج',
+                'description' => 'يثبت المكياج لساعات طويلة دون لمعان زائد.',
+                'category_id' => 2,
+                'count' => 25,
+                'minimum_quantity' => 3,
+                'unit' => 'زجاجة',
+                'buying_price' => 70,
+                'selling_price' => 110,
+                'weight' => 100,
+                'status' => 'active',
+                'image' => 'https://images.unsplash.com/photo-1589987607627-3f8162df95b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+            ],
+        ]);
+    }
+}
